@@ -28,8 +28,9 @@ from tensorflow_probability.python.internal import distribution_util
 ##
 # Orlando, Ding fixes for package name
 # in order to be compatible with tensorflow r1.11, just rename pacakge, as r1.12 compilation still have issue
-# from tensorflow.contrib.linalg.python.ops import linear_operator_addition as linop_add_lib
-from tensorflow.python.ops.linalg import linear_operator_addition as linop_add_lib
+## fixed for r1.11.0 branch, then I switchted back
+from tensorflow.contrib.linalg.python.ops import linear_operator_addition as linop_add_lib
+#from tensorflow.python.ops.linalg import linear_operator_addition as linop_add_lib
 from tensorflow.python.framework import tensor_util
 from tensorflow.python.ops import control_flow_ops
 from tensorflow.python.ops.distributions import categorical as categorical_lib

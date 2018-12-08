@@ -162,7 +162,12 @@ PKGDIR=$(mktemp -d)
 ./bazel-bin/pip_pkg $PKGDIR
 pip install --user --upgrade $PKGDIR/*.whl
 ```
+if just need to install without dependency update, to avoid tf, tb installation, please se
 
+```shell
+# update only library built out
+pip install --user --upgrade --no-deps $PKGDIR/*.whl
+```
 ## Community
 
 As part of TensorFlow, we're committed to fostering an open and welcoming
