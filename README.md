@@ -166,7 +166,7 @@ if just need to install without dependency update, to avoid tf, tb installation,
 
 ```shell
 # update only library built out
-pip install --user --upgrade --no-deps $PKGDIR/*.whl
+pip install --upgrade --no-deps $PKGDIR/*.whl
 ```
 ## Community
 
